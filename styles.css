@@ -1,3 +1,11 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap');
+
+:root {
+    --title-family: 'Rowdies', sans-serif;
+    --general-family: 'Lato', sans-serif;
+}
+
 .nav-btn-format {
     margin-right: 0.5rem;
     margin-left: 0.5rem;
@@ -31,5 +39,13 @@ p.footing {
 }
 
 section.head-title {
-    background-image: image("img/header.png")
+    background-image: /*linear-gradient(rgba(0, 0, 0, 0.7)),*/ url("img/header.png");
+    background-size: 100%;
+    filter: grayscale(60%);
+}
+
+section.head-title p.title-text {
+    font-family: var(--title-family);
+    font-size: 15em;
+    color: white;
 }
