@@ -11,6 +11,15 @@ a.text {
     color: white;
 }
 
+a.navtitle {
+    font-size: 30px;
+}
+
+li.nav-item {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
 
 
 footer {
