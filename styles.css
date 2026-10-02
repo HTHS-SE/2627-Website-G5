@@ -73,8 +73,9 @@ section.head-title p.title-text {
 }
 
 section.carousel {
-    width: 80rem;
-    margin: auto;
+    max-width: 60%;
+    height: auto;
+    margin: 50px auto;
 }
 
 .carousel-control-prev:hover, .carousel-control-next:hover {
