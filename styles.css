@@ -17,11 +17,28 @@ nav {
 
 a.text {
     color: white !important;
-    transition: color 1s;
+    transition: color 0.7s;
+    display: inline-block;
+    position: relative;
 }
 
 a.text:hover {
     color: rgb(188, 188, 188) !important;
+}
+
+a.text::after {
+    content: '';
+    width: 100%;
+    transform: scaleX(0%);
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: white !important;
+    transition: transform 1s;
+}
+
+a.text:hover::after {
+    transform: scaleX(100%)
 }
 
 a.navtitle {
@@ -44,7 +61,7 @@ p.footing {
 }
 
 section.head-title {
-    background-image: /*linear-gradient(rgba(0, 0, 0, 0.7)),*/ url("img/header.png");
+    background-image: url("img/header.png");
     background-size: 100%;
     filter: grayscale(60%);
 }
