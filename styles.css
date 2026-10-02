@@ -63,7 +63,8 @@ p.footing {
 section.head-title {
     background-image: url("img/header.png");
     background-size: 100%;
-    filter: grayscale(60%);
+    background-position: left center;
+    filter: grayscale(75%);
 }
 
 section.head-title p.title-text {
@@ -72,9 +73,18 @@ section.head-title p.title-text {
     color: white;
 }
 
+section.head-title p.subtitle-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 5vw;
+    color: white;
+    text-shadow: -10px 10px 10px rgb(0, 0, 0);
+    justify-content: center;
+}
+
 section.carousel {
-    width: 80rem;
-    margin: auto;
+    max-width: 60%;
+    height: auto;
+    margin: 50px auto;
 }
 
 .carousel-control-prev:hover, .carousel-control-next:hover {
@@ -85,7 +95,6 @@ section.carousel {
     background-color:rgb(0, 0, 0) !important;
     border-radius: 9px;
 }
-
 section.learn p.title-text {
     font-family: var(--title-family);
     font-size: 5vw;
