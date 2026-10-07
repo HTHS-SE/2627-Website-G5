@@ -82,6 +82,25 @@ section.head-title p.subtitle-text {
     padding-top: 4vh;
 }
 
+section.stats img {
+    height: 200px;
+}
+
+section.stats {
+    padding: 30px 0;
+    background-color: #eae6e1;
+}
+
+section.stats div.stat-img {
+    justify-items: flex-end;
+    text-align: right;
+}
+
+section.stats div.stat-txt {
+    justify-items: flex-start;
+    align-items: center;
+}
+
 section.carousel {
     max-width: 60%;
     height: auto;
