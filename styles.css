@@ -6,6 +6,10 @@
     --general-family: 'Lato', sans-serif;
 }
 
+body {
+    color: #EAEAEA;
+}
+
 .nav-btn-format {
     margin-right: 2rem;
     margin-left: 0.5rem;
@@ -88,7 +92,6 @@ section.stats img {
 
 section.stats {
     padding: 30px 0;
-    background-color: #eae6e1;
 }
 
 section.stats div.stat-img {
