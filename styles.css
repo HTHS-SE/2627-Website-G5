@@ -68,6 +68,13 @@ p.subtext {
     font-size: 30px;
 }
 
+figcaption {
+    font-family: var(--general-family);
+    font-size: 25px;
+    padding: 20px;
+    justify-content: center;
+}
+
 footer {
     background-color: #000;
 }
