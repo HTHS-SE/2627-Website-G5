@@ -58,7 +58,15 @@ li.nav-item {
     font-size: 20px;
 }
 
+h1.subtitle {
+    font-family: var(--title-family);
+    font-size: 70px;
+}
 
+p.subtext {
+    font-family: var(--general-family);
+    font-size: 30px;
+}
 
 footer {
     background-color: #000;
