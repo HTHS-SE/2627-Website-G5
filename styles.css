@@ -169,7 +169,6 @@ div.card {
     margin: 1rem;
     max-width: 30rem;
     height: auto;
-    justify-content: center;
 }
 
 div.card:hover {
