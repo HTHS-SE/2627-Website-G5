@@ -166,9 +166,10 @@ section.learn .text-piece-learn{
 
 div.card {
     transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.875) 0s;
-    margin: 1rem;
+    margin: 1rem 1rem 10rem 1rem;
     max-width: 30rem;
     height: auto;
+    justify-self: center;
 }
 
 div.card:hover {
