@@ -197,14 +197,18 @@ div.card {
 div.card:hover {
     transform: rotate(5deg);
 }
+section.learn .row {
+    padding-top: 200px;
+}
 
 section.learn a.button {
     font-family: var(--general-family);
     font-size: 20px;
-    background-color: #1C3361;
-    color: white;
+    background-color: white;
+    color: #1C3361;
     border-radius: 5px;
     padding: 0.5rem 1rem;
     transition: background-color 0.5s, color 0.5s;
     margin: 200px auto;
+    position: relative;
 }
