@@ -96,6 +96,10 @@ section.head-title {
     filter: grayscale(75%);
 }
 
+section.learn-title {
+    background-color: #1C3361;
+}
+
 section.head-title p.title-text {
     font-family: var(--title-family);
     font-size: 4vw;
