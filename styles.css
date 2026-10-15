@@ -58,6 +58,13 @@ li.nav-item {
     font-size: 20px;
 }
 
+h1.main {
+    font-family: var(--title-family);
+    font-size: 7vw;
+    justify-self: center;
+    margin-top: 3rem;
+}
+
 h1.subtitle {
     font-family: var(--title-family);
     font-size: 70px;
