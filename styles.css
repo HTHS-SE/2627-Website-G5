@@ -139,7 +139,7 @@ section.stats div.stat-txt {
 section.carousel {
     max-width: 90%;
     height: auto;
-    margin: 0 auto 4.5rem auto;
+    margin: 4.5rem auto 4.5rem auto;
 }
 
 .carousel-control-prev:hover, .carousel-control-next:hover {
