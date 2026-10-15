@@ -91,14 +91,14 @@ section.head-title {
 
 section.head-title p.title-text {
     font-family: var(--title-family);
-    font-size: 7vw;
+    font-size: 4vw;
     color: white;
     padding-top: 9vh;
 }
 
 section.head-title p.subtitle-text {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 5vw;
+    font-size: 3vw;
     color: white;
     text-shadow: -10px 10px 10px rgb(0, 0, 0);
     padding-top: 4vh;
@@ -123,7 +123,7 @@ section.stats div.stat-txt {
 }
 
 section.carousel {
-    max-width: 60%;
+    max-width: 90%;
     height: auto;
     margin: 50px auto;
 }
