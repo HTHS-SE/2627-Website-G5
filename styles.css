@@ -6,10 +6,6 @@
     --general-family: 'Lato', sans-serif;
 }
 
-body {
-    color: #EAEAEA;
-}
-
 .nav-btn-format {
     margin-right: 2rem;
     margin-left: 0.5rem;
@@ -19,8 +15,12 @@ nav {
     background-image: linear-gradient(320deg, #000, #999, 35%, #000);
 }
 
-body {
-    background-color: #eaeaea !important;
+html {
+    background-color: #FFFFFF;
+}
+
+div.container-xl {
+    background-color: #EAEAEA !important;
 }
 
 a.text {
@@ -92,6 +92,7 @@ p.footing {
 section.head-title {
     background-image: url("img/header.png");
     background-size: 100%;
+    width: 100%;
     background-position: left center;
     filter: grayscale(75%);
 }
