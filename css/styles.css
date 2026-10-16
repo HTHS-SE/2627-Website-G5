@@ -23,7 +23,7 @@ nav {
 }
 
 .navbar .navbar-toggler-icon {
-    background-image: url("img/hamburger.png");
+    background-image: url("../img/hamburger.png");
     background-size: 200%;
 }
 
@@ -125,7 +125,7 @@ section.learn-title {
 
 section.head-title {
     min-height: clamp(400px, 56vw, 820px);
-    background-image: url("img/header.png");
+    background-image: url("../img/header.png");
     background-size: cover;
     width: 100%;
     background-position: center;
