@@ -94,15 +94,22 @@
             Assuming the installation of a suitable python version is complete, pytorch and the corresponding torchvision libraries can be installed through the
             pip package manager from python in the terminal with the following command: 
             <br>
-            <code class="code-piece-learn" style="width: 100%;">pip install torch torchvision</code>
+            <div class="code-piece-learn" style="width: 70%; margin: 0px auto;">
+              <code>
+                pip install torch torchvision
+              </code>
+            </div>
             <br>
+          </p>
+            <p class="text-piece-learn col-12" style="width: 100%; margin: 0px 6.792px 0px 6.792px; padding: 0px auto;">
             It is important to install a correct version of pytorch, given that GPU accelerators may require the use of NVIDIA's CUDA toolkit, more on which can be
             found <a href="https://developer.nvidia.com/cuda/toolkit">here</a>. Otherwise, CPUs can be used to train neural network programs, albeit at a pace slower 
-            than that of GPUs by a considerable factor.
+            than that of GPUs by a considerable factor. </p>
             <br>
-            When finished, import the following classes into the python script to allow for the use of pytorch and os libraries: 
+            <p class="text-piece-learn col-12" style="width: 100%; margin: 0px 6.792px 0px 6.792px; padding: 0px auto;">
+            When finished, import the following classes into the python script to allow for the use of pytorch and os libraries: </p>
             <br>
-            <div class="code-piece-learn" style="width: 70%;">
+            <div class="code-piece-learn" style="width: 70%; margin: 0px auto;">
               <code>
                 import os <br>
                 import torch <br>
@@ -119,7 +126,7 @@
             pixels each, and we want the return of the network to be a 10-class vector of digit probabilities, we utilize several
             linear layers to accomplish this goal: <br>
           </p>
-          <div class="code-piece-learn" style="width: 70%;">
+          <div class="code-piece-learn" style="width: 70%; margin: 0px auto;">
             <code>
             class NeuralNetwork(nn.Module): <br>
             &nbsp;&nbsp;&nbsp;&nbsp;def __init__(self): <br>
@@ -156,7 +163,7 @@
             using the neural network class defined above. Backpropagation is done with the nn.backward() command on calculated loss values from the logits returned by the model, which allows us to extract
             gradients in a seamless manner, and parameters are updated with the optimizer.step() function that follows: <br> 
           </p>
-          <div class="code-piece-learn" style="width: 70%;">
+          <div class="code-piece-learn" style="width: 70%; margin: 0px auto;">
             <code>
             model = NeuralNetwork().to(device) <br>
             x = torch.rand(1, 28, 28, requires_grad=True, device=device) <br>
