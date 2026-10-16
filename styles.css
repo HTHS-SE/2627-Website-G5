@@ -36,29 +36,35 @@ div.container-xl {
 
 a.text {
     color: white !important;
-    transition: color 0.7s;
     display: inline-block;
     position: relative;
 }
 
-a.text:hover {
-    color: rgb(188, 188, 188) !important;
+
+/* Navbar link underline animation */
+.navbar a.nav-link.text {
+    position: relative;
+    display: inline-block;
 }
 
-a.text::after {
+.navbar a.nav-link.text::after {
     content: '';
+    position: absolute;
     width: 100%;
-    transform: scaleX(0%);
     height: 2px;
     left: 0;
     bottom: 0;
-    background-color: white !important;
-    transition: transform 1s;
+    background-color: white;
+
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
 }
 
-a.text:hover::after {
-    transform: scaleX(100%)
+.navbar a.nav-link.text:hover::after {
+    transform: scaleX(1);
 }
+
 
 a.navtitle {
     font-size: 30px;
