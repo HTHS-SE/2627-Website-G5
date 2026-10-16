@@ -102,33 +102,33 @@
               </a>
             </em>
           </p>
-          <p class="text-piece-learn col-12" style="width: 100%; margin: 0px 6.792px 0px 6.792px; padding: 0px auto;">
+          <p class="text-piece-learn col-12">
             In the modern world, building a neural network program has become increasingly facilitated for beginners in
             the field of machine learning and artificial intelligence. In this tutorial, we will detail the process in 
             creating your very first neural network with the use of the python library <strong>PyTorch.</strong> </p>
           <p><br></p>
             <h2 class="h2-text">Getting started</h2>
-          <p class="text-piece-learn col-12" style="width: 100%; margin: 0px 6.792px 0px 6.792px; padding: 0px auto;">
+          <p class="text-piece-learn col-12">
             <br>
             Assuming the installation of a suitable python version is complete, pytorch and the corresponding torchvision libraries can be installed through the
             pip package manager from python in the terminal with the following command: 
             <br>
-            <div class="code-piece-learn" style="width: 70%; margin: 0px auto;">
+            <div class="code-piece-learn">
               <code>
                 pip install torch torchvision
               </code>
             </div>
             <br>
           </p>
-            <p class="text-piece-learn col-12" style="width: 100%; margin: 0px 6.792px 0px 6.792px; padding: 0px auto;">
+            <p class="text-piece-learn col-12">
             It is important to install a correct version of pytorch, given that GPU accelerators may require the use of NVIDIA's CUDA toolkit, more on which can be
             found <a href="https://developer.nvidia.com/cuda/toolkit">here</a>. Otherwise, CPUs can be used to train neural network programs, albeit at a pace slower 
             than that of GPUs by a considerable factor. </p>
             <br>
-            <p class="text-piece-learn col-12" style="width: 100%; margin: 0px 6.792px 0px 6.792px; padding: 0px auto;">
+            <p class="text-piece-learn col-12">
             When finished, import the following classes into the python script to allow for the use of pytorch and os libraries: </p>
             <br>
-            <div class="code-piece-learn" style="width: 70%; margin: 0px auto;">
+            <div class="code-piece-learn">
               <code>
                 import os <br>
                 import torch <br>
@@ -139,13 +139,13 @@
             </div>
           </p>
             <h2 class="h2-text">Class Initialization</h2>
-          <p class="text-piece-learn col-12" style="width: 100%; margin: 0px 6.792px 0px 6.792px; padding: 0px auto;">
+          <p class="text-piece-learn col-12">
             <br>Neural networks are conventionally built in the format of a class. For the purposes of this introduction, we will
             use linear NN layers to build a simple MNIST neural network. Since the MNIST dataset consists of images with 784 
             pixels each, and we want the return of the network to be a 10-class vector of digit probabilities, we utilize several
             linear layers to accomplish this goal: <br>
           </p>
-          <div class="code-piece-learn" style="width: 70%; margin: 0px auto;">
+          <div class="code-piece-learn col-12">
             <code>
             import torch<br>
             from torch import nn<br>
@@ -153,7 +153,7 @@
             from torchvision import datasets, transforms
           </code>
           </div>
-          <p class="text-piece-learn col-12" style="width: 100%; margin: 0px 6.792px 0px 6.792px; padding: 0px auto;">
+          <p class="text-piece-learn col-12">
             <br>
             We additionally write a forward function in the neural network class to allow for the forward pass of data. 
             Flattens are used in order to flatten 28x28 pixel images into 784-by-1 vectors capable of being fed into the 
@@ -163,14 +163,14 @@
           </p>
           <br>
           <h2 class="h2-text"><br>Passing Data Through the Model</h2>
-          <p class="text-piece-learn col-12" style="width: 100%; margin: 0px 6.792px 0px 6.792px; padding: 0px auto;">
+          <p class="text-piece-learn col-12">
             <br>
             To pass data through the model, simply initialze a torch tensor of size 1-by-28-by-28 with requires_grad=True and proper device
             initializations to begin with. Afterwards, pass through the tensor with a call through the model, which is also to be initialized
             using the neural network class defined above. Backpropagation is done with the nn.backward() command on calculated loss values from the logits returned by the model, which allows us to extract
             gradients in a seamless manner, and parameters are updated with the optimizer.step() function that follows: <br> 
           </p>
-          <div class="code-piece-learn" style="width: 70%; margin: 0px auto;">
+          <div class="code-piece-learn col-12">
             <code>
             loss_fn = nn.CrossEntropyLoss()<br>
             optimizer = torch.optim.SGD(model.parameters(), lr=0.001)<br>
@@ -183,7 +183,7 @@
             optimizer.step()
           </code>
           </div>
-          <p class="text-piece-learn col-12" style="width: 100%; margin: 0px 6.792px 0px 6.792px; padding: 0px auto;">
+          <p class="text-piece-learn col-12">
             <br>
             Congratulations! You have now built a rudimentary neural network model in pytorch, capable of taking in vector datasets 
             which is also capable of backpropagation on a general level! Consider visiting our "explore" pages to learn more about
