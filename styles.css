@@ -333,7 +333,8 @@ div.card:hover {
     transform: rotate(5deg);
 }
 section.learn .row {
-    padding-top: 200px;
+    margin-top: 60px;
+    padding-top: 80px;
 }
 
 section.learn a.button {
@@ -347,6 +348,10 @@ section.learn a.button {
     margin: 200px auto;
     text-decoration: none;
     position: relative;
+}
+
+#learn {
+    scroll-margin-top: 190px;
 }
 
 .demo-section {

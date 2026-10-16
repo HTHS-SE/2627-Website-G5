@@ -1,53 +1,60 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Artificial Intelligence</title>
-  <link rel="stylesheet" href="styles.css" />
+
+  <link rel="stylesheet" href="../styles.css" />
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
 
-  <link rel="icon" href="img/logo.png" />
+  <link rel="icon" href="../img/logo.png" />
 </head>
 
-<body>
+<body class="article-body">
   <header>
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-xl fixed-top">
       <div class="container-fluid p-3">
-        <a class="navbar-brand text navtitle" href="index.html">
-          <img src="img/logo.png" alt="logo" height="75" />
+        <a class="navbar-brand text navtitle" href="..">
+          <img src="../img/logo.png" alt="logo" height="75" />
           &nbsp;&nbsp;Artificial Intelligence
         </a>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link text" href="learn.html">Learn</a>
+              <a class="nav-link text" href="../learn.html">Learn</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text" href="explore.html">Explore</a>
+              <a class="nav-link text" href="../explore.html">Explore</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text" href="demo.html">Demo</a>
+              <a class="nav-link text" href="../demo.html">Demo</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text" href="about-us.html">About Us</a>
+              <a class="nav-link text" href="../about-us.html">About Us</a>
             </li>
           </ul>
+
           <div class="navbar-nav ms-auto">
             <button class="btn btn-secondary nav-btn-format" type="button">
               Log In
             </button>
+
             <button class="btn btn-primary nav-btn-format" type="button">
               Sign Up
             </button>
@@ -56,129 +63,206 @@
       </div>
     </nav>
   </header>
-  <div class="container-xl">
-    <section class="learn learn-title" style="height: 650px;">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-5 offset-1">
-            <p class="title-text">Learn</p>
-          </div>
-          <div class="col-5 offset-1">
-            <a href="learn.html" class="button" style="top: 90px;">Click to explore!</a>
-          </div>
+
+  <section class="learn learn-title">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-5 offset-md-1">
+          <p class="title-text">Learn</p>
         </div>
-        <div class="row" style="padding-top: 0px;">
-          <p class="subtitle-text text-center">Learn with detailed descriptions, examples, and code snippets.</p>
+
+        <div class="col-12 col-md-5 text-center">
+          <a href="#learn" class="button" style="background-color: #FFAB40;">Click to explore!</a>
         </div>
       </div>
-    </section>
-  </div>
-  <div class="container-xl" style="padding-top: 0px; margin-top: 0px;">
-    <div class="row">
-      <div class="col">
-        <h1 class="subtitle text-center">Creating a Basic Neural Network</h1>
-        <div class="row" style="display: flex;width: 100%;">
-          <p class="text-piece-learn col-12" style="width: 100%; margin: 0px 6.792px 0px 6.792px; padding: 0px auto;">
-            <br><br>
-            -Adapted from <a href="https://docs.pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html">PyTorch docs</a>-
-            <br><br>
-          </p>
-          <p class="text-piece-learn col-12" style="width: 100%; margin: 0px 6.792px 0px 6.792px; padding: 0px auto;">
-            In the modern world, building a neural network program has become increasingly facilitated for beginners in
-            the field of machine learning and artificial intelligence. In this tutorial, we will detail the process in 
-            creating your very first neural network with the use of the python library <strong>PyTorch.</strong> </p>
-          <p><br></p>
-            <h2>Getting started</h2>
-          <p class="text-piece-learn col-12" style="width: 100%; margin: 0px 6.792px 0px 6.792px; padding: 0px auto;">
-            <br>
-            Assuming the installation of a suitable python version is complete, pytorch and the corresponding torchvision libraries can be installed through the
-            pip package manager from python in the terminal with the following command: 
-            <br>
-            <code class="code-piece-learn" style="width: 100%;">pip install torch torchvision</code>
-            <br>
-            It is important to install a correct version of pytorch, given that GPU accelerators may require the use of NVIDIA's CUDA toolkit, more on which can be
-            found <a href="https://developer.nvidia.com/cuda/toolkit">here</a>. Otherwise, CPUs can be used to train neural network programs, albeit at a pace slower 
-            than that of GPUs by a considerable factor.
-            <br>
-            When finished, import the following classes into the python script to allow for the use of pytorch and os libraries: 
-            <br>
-            <div class="code-piece-learn" style="width: 70%;">
-              <code>
-                import os <br>
-                import torch <br>
-                from torch import nn <br>
-                from torch.utils.data import DataLoader <br>
-                from torchvision import datasets, transforms
-              </code>
-            </div>
-          </p>
-            <h2>Class Initialization</h2>
-          <p class="text-piece-learn col-12" style="width: 100%; margin: 0px 6.792px 0px 6.792px; padding: 0px auto;">
-            <br>Neural networks are conventionally built in the format of a class. For the purposes of this introduction, we will
-            use linear NN layers to build a simple MNIST neural network. Since the MNIST dataset consists of images with 784 
-            pixels each, and we want the return of the network to be a 10-class vector of digit probabilities, we utilize several
-            linear layers to accomplish this goal: <br>
-          </p>
-          <div class="code-piece-learn" style="width: 70%;">
-            <code>
-            class NeuralNetwork(nn.Module): <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;def __init__(self): <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;super(NeuralNetwork, self).__init__() <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.flatten = nn.Flatten() <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.linear_relu_stack = nn.Sequential( <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nn.Linear(28*28, 512), <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;nn.ReLU(), <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;nn.Linear(512, 512), <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;nn.ReLU(), <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;nn.Linear(512, 10) <br>
-            &nbsp;&nbsp; ) <br><br>
 
-            &nbsp;&nbsp;def forward(self, x): <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;logits = self.linear_relu_stack(x) <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;logits = self.linear_relu_stack(self.flatten(x)) <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;return logits
-            </code>
-          </div>
-          <p class="text-piece-learn col-12" style="width: 100%; margin: 0px 6.792px 0px 6.792px; padding: 0px auto;">
-            <br>
-            We additionally write a forward function in the neural network class to allow for the forward pass of data. 
-            Flattens are used in order to flatten 28x28 pixel images into 784-by-1 vectors capable of being fed into the 
-            linear layers. The function takes in a tensor (generalization of scalars, vectors, etc) which is then used and
-            processed through the network. We will assume the tensor holds a "requires_grad" parameter of "true" for convenient
-            backpropagation of gradients, which will be used later on. <br> 
-          </p>
-          <br>
-          <h2><br>Passing Data Through the Model</h2>
-          <p class="text-piece-learn col-12" style="width: 100%; margin: 0px 6.792px 0px 6.792px; padding: 0px auto;">
-            <br>
-            To pass data through the model, simply initialze a torch tensor of size 1-by-28-by-28 with requires_grad=True and proper device
-            initializations to begin with. Afterwards, pass through the tensor with a call through the model, which is also to be initialized
-            using the neural network class defined above. Backpropagation is done with the nn.backward() command on calculated loss values from the logits returned by the model, which allows us to extract
-            gradients in a seamless manner, and parameters are updated with the optimizer.step() function that follows: <br> 
-          </p>
-          <div class="code-piece-learn" style="width: 70%;">
-            <code>
-            model = NeuralNetwork().to(device) <br>
-            x = torch.rand(1, 28, 28, requires_grad=True, device=device) <br>
-            logits = model(x) <br>
-            loss = loss_fn(logits, y) <br>
-            loss.backward() <br>
-            optimizer.step() <br>
-            </code>
-          </div>
-          <p class="text-piece-learn col-12" style="width: 100%; margin: 0px 6.792px 0px 6.792px; padding: 0px auto;">
-            <br>
-            Congratulations! You have now built a rudimentary neural network model in pytorch, capable of taking in vector datasets 
-            which is also capable of backpropagation on a general level! Consider visiting our "explore" pages to learn more about
-            the types of neural networks available in pytorch, and also visit the demo pages for a demonstration of pre-trained networks
-            on the MNIST and CIFAR datasets.  <br> 
+      <div class="row">
+        <div class="col-12">
+          <p class="subtitle-text text-center">
+            Learn with detailed descriptions, examples, and code snippets.
           </p>
         </div>
       </div>
     </div>
+  </section>
+  <section id="learn">
+    <div class="container-xl">
+      <div class="row">
+        <div class="col">
+
+          <h1 class="subtitle text-center pt-5">
+            Creating a Basic Neural Network
+          </h1>
+
+          <p class="text-piece-learn text-center">
+            <em>
+              Adapted from
+              <a href="https://docs.pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html">
+                PyTorch documentation
+              </a>
+            </em>
+          </p>
+
+          <p class="text-piece-learn">
+            In the modern world, building a neural network program has become
+            increasingly accessible to beginners in machine learning and
+            artificial intelligence. In this tutorial, we will explain the
+            process of creating your very first neural network using the Python
+            library <strong>PyTorch.</strong>
+          </p>
+
+          <h2>Getting Started</h2>
+
+          <p class="text-piece-learn">
+            Assuming that a correct version of Python is already installed,
+            PyTorch and the corresponding Torchvision library can be installed
+            through the pip package manager using the following command in the
+            terminal:
+          </p>
+
+          <div class="code-piece-learn">
+            <code>pip install torch torchvision</code>
+          </div>
+
+          <p class="text-piece-learn">
+            It is important to install a compatible version of PyTorch.
+            GPU acceleration may require NVIDIA's CUDA toolkit, more information
+            about which can be found
+            <a href="https://developer.nvidia.com/cuda/toolkit">here</a>.
+            Otherwise, CPUs can be used to train neural networks, although
+            training may be considerably slower.
+          </p>
+
+          <p class="text-piece-learn">
+            Once installation is complete, import the following modules into
+            your Python script to use PyTorch and its associated data utilities:
+          </p>
+
+          <div class="code-piece-learn">
+            <code>
+            import torch<br>
+            from torch import nn<br>
+            from torch.utils.data import DataLoader<br>
+            from torchvision import datasets, transforms
+          </code>
+          </div>
+
+          <h2>Class Initialization</h2>
+
+          <p class="text-piece-learn">
+            Neural networks are conventionally implemented using classes.
+            For this introduction, we will use linear layers to build a simple
+            neural network that can classify images from the MNIST dataset.
+            Since MNIST images contain 784 pixels each, and the network must
+            produce ten output values corresponding to the ten possible digits,
+            we use several linear layers to accomplish this goal.
+          </p>
+
+          <div class="code-piece-learn">
+            <code>
+            class NeuralNetwork(nn.Module):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;def __init__(self):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;super().__init__()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.flatten = nn.Flatten()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.linear_relu_stack = nn.Sequential(<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nn.Linear(28 * 28, 512),<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nn.ReLU(),<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nn.Linear(512, 512),<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nn.ReLU(),<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nn.Linear(512, 10)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)<br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;def forward(self, x):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x = self.flatten(x)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logits = self.linear_relu_stack(x)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return logits
+          </code>
+          </div>
+
+          <p class="text-piece-learn">
+            We additionally define a <code>forward()</code> function in the
+            neural network class to specify how input data passes through the
+            model. The flattening operation converts each 28-by-28 image into
+            a vector containing 784 values, allowing it to be processed by the
+            linear layers. The network returns ten logits, which represent
+            unnormalized scores for the possible digit classes.
+          </p>
+
+          <p class="text-piece-learn">
+            During training, these logits can be compared with the correct
+            labels using a loss function such as
+            <code>nn.CrossEntropyLoss()</code>. The loss measures how far the
+            model's predictions are from the expected answers and provides the
+            information needed to improve the network's parameters.
+          </p>
+
+          <h2>Passing Data Through the Model</h2>
+
+          <p class="text-piece-learn">
+            To pass data through the model, initialize the neural network and
+            create an input tensor with the appropriate dimensions. For a batch
+            containing one MNIST image, the input shape is
+            <code>(1, 1, 28, 28)</code>, representing the batch size, number
+            of channels, image height, and image width.
+          </p>
+
+          <div class="code-piece-learn">
+            <code>
+            device = torch.device(<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;"cuda" if torch.cuda.is_available() else "cpu"<br>
+            )<br>
+            <br>
+            model = NeuralNetwork().to(device)<br>
+            x = torch.rand(1, 1, 28, 28, device=device)<br>
+            logits = model(x)
+          </code>
+          </div>
+
+          <p class="text-piece-learn">
+            The input tensor is passed to the model, which returns ten logits.
+            During training, the correct label is used to calculate the loss.
+            Backpropagation computes gradients, and an optimizer updates the
+            model's parameters to improve its predictions.
+          </p>
+
+          <div class="code-piece-learn">
+            <code>
+            loss_fn = nn.CrossEntropyLoss()<br>
+            optimizer = torch.optim.SGD(model.parameters(), lr=0.001)<br>
+            <br>
+            y = torch.tensor([3], device=device)<br>
+            optimizer.zero_grad()<br>
+            logits = model(x)<br>
+            loss = loss_fn(logits, y)<br>
+            loss.backward()<br>
+            optimizer.step()
+          </code>
+          </div>
+
+          <p class="text-piece-learn">
+            This example demonstrates a single training step using a randomly
+            initialized input and a sample label. A complete training program
+            would repeat this process over batches of real images and their
+            corresponding labels for multiple epochs.
+          </p>
+
+          <p class="text-piece-learn">
+            Congratulations! You have now explored the basic structure of a
+            neural network in PyTorch, including its layers, forward pass, loss
+            calculation, and parameter updates. Visit our Explore pages to learn
+            more about different neural network architectures, and check out the
+            Demo pages to see pretrained models working with datasets such as
+            MNIST and CIFAR-10.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
   <footer class="p-5 footer text-light text-center position-relative">
     <div class="container">
       <p class="lead footing">Copyright &copy; SE2627 Group 5</p>
+
       <a href="#" class="position-absolute bottom-0 end-0 p-5">
         <i class="bi bi-arrow-up-circle h2 icon-white"></i>
       </a>
