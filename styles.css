@@ -254,6 +254,10 @@ section.learn p.subtitle-text {
     padding-top: 4vh;
 }
 
+.h2-text {
+    margin-left: 10px;
+}
+
 .article-body .code-piece-learn{
     width: 97%;
     margin: auto;
@@ -332,6 +336,14 @@ div.card {
 div.card:hover {
     transform: rotate(5deg);
 }
+
+.card-title {
+    font-family: var(--title-family);
+}
+.card-text {
+    font-family: var(--general-family);
+}
+
 section.learn .row {
     margin-top: 60px;
     padding-top: 80px;

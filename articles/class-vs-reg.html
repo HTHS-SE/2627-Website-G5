@@ -66,82 +66,167 @@
         <h1 class="subtitle text-center">Classification & Regression</h1>
 
         <p class="text-piece-learn">
-          Neural networks are a type of machine learning model inspired by the way
-          biological neurons process information. They consist of interconnected
-          artificial neurons that learn patterns from data. Neural networks are
-          widely used in artificial intelligence for tasks such as image
-          recognition, speech processing, language translation, and prediction.
-          Instead of following only explicitly programmed rules, they adjust
-          internal parameters during training to improve their predictions.
+          Classification and regression are two major types of machine learning
+          tasks. Both use data to learn patterns and make predictions, but they
+          predict different things. Classification predicts a category, such as
+          whether an email is spam, while regression predicts a numerical value,
+          such as the price of a house.
         </p>
 
         <p class="text-piece-learn">
-          Neural networks learn by processing examples and comparing their
-          predictions with the correct answers. A learning algorithm uses the
-          resulting error to update the network's parameters. After training,
-          the network can apply the patterns it learned to new data. The quality
-          of its results depends on factors such as the training data, network
-          architecture, and training process.
+          Both tasks are commonly part of supervised learning, where a model
+          learns from examples that include the correct answers. Understanding
+          the difference between them helps determine which model is appropriate
+          for a particular problem.
         </p>
 
-        <h2>Structure of Neural Networks</h2>
+        <figure class="text-center my-4">
+          <img
+            src="../img/classification-regression.png"
+            alt="Comparison of classification categories and regression numerical predictions"
+            class="img-fluid"
+            style="max-height: 400px; width: auto;"
+          />
+          <figcaption class="text-muted">
+            Classification predicts categories, while regression predicts numerical values.
+          </figcaption>
+        </figure>
+
+        <h2>Supervised and Unsupervised Learning</h2>
 
         <p class="text-piece-learn">
-          A typical neural network consists of three types of layers: an input
-          layer, one or more hidden layers, and an output layer. The input layer
-          receives data, such as numerical measurements or image pixels. Hidden
-          layers transform that information using weighted connections,
-          mathematical operations, and activation functions. The output layer
-          produces the network's final prediction, such as a category label or
-          a numerical value.
-        </p>
-
-        <p class="text-piece-learn">
-          Each connection has a weight that determines how strongly one neuron
-          influences another. Neurons also commonly use a bias and an activation
-          function to help the network learn complex relationships. During
-          training, backpropagation calculates how the prediction error relates
-          to the network's parameters, and an optimization algorithm updates
-          those parameters to reduce the error. Networks with many hidden layers
-          are often described as deep neural networks.
-        </p>
-
-        <h2>Strengths and Limitations</h2>
-
-        <p class="text-piece-learn">
-          Neural networks can learn complicated patterns from large amounts of
-          data and perform well on tasks that are difficult to solve with
-          manually written rules. They are especially useful for recognizing
-          objects in images, understanding speech, processing text, and
-          identifying relationships in complex datasets. With sufficient
-          training data and an appropriate architecture, they can generalize
-          their learned patterns to examples they have not encountered before.
+          In supervised learning, a model trains on labeled data, meaning each
+          example includes the expected answer. For example, a dataset of house
+          features might include each house's actual price. Classification and
+          regression are both supervised learning tasks: classification learns
+          to predict labels, while regression learns to predict numerical values.
         </p>
 
         <p class="text-piece-learn">
-          However, neural networks also have limitations. Training large models
-          can require substantial computing power, time, and data. Networks may
-          overfit when they memorize details of their training data instead of
-          learning patterns that generalize well to new examples. They can also
-          produce incorrect predictions, inherit biases from their training
-          data, and be difficult to interpret. Techniques such as validation,
-          regularization, and testing on unseen data help evaluate and improve
-          their reliability.
+          Unsupervised learning works with data that has no provided target
+          labels. Instead of predicting known answers, a model looks for patterns
+          or groups within the data. For example, clustering can group customers
+          with similar shopping habits. Although classification and regression
+          usually rely on supervised learning, unsupervised methods can help
+          organize data before a model is trained.
         </p>
 
-        <img src="../img/Problem-of-overfitting.png" alt="Illustration of overfitting in machine learning"
-          class="img-fluid" style="max-height: 450px; width: auto; margin: 20px auto; display: block;" />
+        <h2>Classification</h2>
 
         <p class="text-piece-learn">
-          Overfitting occurs when a model learns the training examples too
-          closely, including noise or accidental details. As a result, it may
-          perform well on training data but poorly on unfamiliar examples.
-          To reduce overfitting, developers can use techniques such as
-          regularization, dropout, early stopping, and additional representative
-          training data. Evaluating a model on separate validation and test
-          datasets helps determine whether it can generalize beyond the examples
-          used to train it.
+          Classification assigns an input to one or more categories. Examples
+          include identifying whether an image contains a cat or a dog, detecting
+          spam emails, and predicting whether a transaction may be fraudulent.
+          A model learns from labeled examples and uses the patterns it discovers
+          to classify new data.
         </p>
+
+        <p class="text-piece-learn">
+          Many classification models separate categories using a
+          <em>decision boundary</em>. In a simple example with two features,
+          this boundary might be a line dividing two groups of data points.
+          More complex models can create curved or irregular boundaries.
+          Support vector machines (SVMs), for example, find a boundary that
+          separates classes while aiming to maximize the margin between them.
+          Decision trees and neural networks are other common classification
+          methods.
+        </p>
+
+        <p class="text-piece-learn">
+          Some classification models also output probabilities for each class.
+          A model might estimate an 85% probability that an email is spam,
+          then use a chosen threshold to make its final decision. The threshold
+          can be adjusted depending on the cost of false positives and
+          false negatives.
+        </p>
+
+        <figure class="text-center my-4">
+          <img
+            src="../img/classification-boundaries.png"
+            alt="Diagram showing a decision boundary separating two classes of data points"
+            class="img-fluid"
+            style="max-height: 400px; width: auto;"
+          />
+          <figcaption class="text-muted">
+            A decision boundary separates data points predicted to belong to different classes.
+          </figcaption>
+        </figure>
+
+        <h2>Regression</h2>
+
+        <p class="text-piece-learn">
+          Regression predicts a numerical value based on patterns in data.
+          It can be used to estimate house prices, forecast sales, predict
+          temperatures, or study how one variable changes with another.
+          Unlike classification, regression produces a number rather than
+          choosing a category.
+        </p>
+
+        <p class="text-piece-learn">
+          <em>Linear regression</em> models the relationship between variables
+          using a straight line, often written as y = mx + b. The model learns
+          a slope and intercept that help it fit the data. When several input
+          variables are used, multiple linear regression combines them to
+          estimate the target value.
+        </p>
+
+        <p class="text-piece-learn">
+          Not every relationship follows a straight line. <em>Polynomial
+          regression</em> adds powers of the input variable, such as x², to
+          model curved relationships. Other approaches include decision-tree
+          regression and neural network regression, which can learn more
+          complex patterns.
+        </p>
+
+        <p class="text-piece-learn">
+          <em>Logistic regression</em> is an important exception to the naming:
+          despite having "regression" in its name, it is commonly used for
+          classification. It estimates the probability of an outcome, such
+          as whether a customer will cancel a subscription, and that probability
+          can be used to choose a class.
+        </p>
+
+        <figure class="text-center my-4">
+          <img
+            src="../img/regression-models.png"
+            alt="Comparison of linear regression with a straight line and polynomial regression with a curve"
+            class="img-fluid"
+            style="max-height: 400px; width: auto;"
+          />
+          <figcaption class="text-muted">
+            Linear regression fits a straight line, while polynomial regression can model curved patterns.
+          </figcaption>
+        </figure>
+
+        <h2>Training and Evaluating Models</h2>
+
+        <p class="text-piece-learn">
+          A model's performance should be tested on data it did not train on.
+          For classification, common evaluation measures include accuracy,
+          precision, recall, and the F1 score. These help show how often a
+          model is correct and what kinds of mistakes it makes.
+        </p>
+
+        <p class="text-piece-learn">
+          Regression models are often evaluated using mean absolute error (MAE)
+          or mean squared error (MSE), which measure the difference between
+          predicted and actual values. Lower errors generally indicate better
+          predictions on the evaluated data. However, a model can overfit by
+          learning the training examples too closely, so testing on unseen data
+          is important for both tasks.
+        </p>
+
+        <figure class="text-center my-4">
+          <img
+            src="../img/model-evaluation.png"
+            alt="Illustration of comparing model predictions with actual data"
+            class="img-fluid"
+            style="max-height: 400px; width: auto;"
+          />
+          <figcaption class="text-muted">
+            Evaluating predictions against actual results helps measure a model's performance.
+          </figcaption>
+        </figure>
       </div>
     </div>
   </div>

@@ -66,82 +66,169 @@
         <h1 class="subtitle text-center">Computer Vision</h1>
 
         <p class="text-piece-learn">
-          Neural networks are a type of machine learning model inspired by the way
-          biological neurons process information. They consist of interconnected
-          artificial neurons that learn patterns from data. Neural networks are
-          widely used in artificial intelligence for tasks such as image
-          recognition, speech processing, language translation, and prediction.
-          Instead of following only explicitly programmed rules, they adjust
-          internal parameters during training to improve their predictions.
+          Computer vision is a field of artificial intelligence that allows
+          computers to analyze and understand images and videos. Instead of
+          seeing the world as humans do, computers process images as numerical
+          data. AI models can learn patterns in that data to recognize objects,
+          identify faces, detect movement, and understand scenes.
         </p>
 
         <p class="text-piece-learn">
-          Neural networks learn by processing examples and comparing their
-          predictions with the correct answers. A learning algorithm uses the
-          resulting error to update the network's parameters. After training,
-          the network can apply the patterns it learned to new data. The quality
-          of its results depends on factors such as the training data, network
-          architecture, and training process.
+          Modern computer vision often uses deep learning, especially
+          convolutional neural networks (CNNs). These models learn visual
+          features from examples rather than relying entirely on manually
+          programmed rules.
         </p>
 
-        <h2>Structure of Neural Networks</h2>
+        <figure class="text-center my-4">
+          <img
+            src="../img/computer-vision-overview.png"
+            alt="Examples of a computer vision system identifying objects in an image"
+            class="img-fluid"
+            style="max-height: 400px; width: auto;"
+          />
+          <figcaption class="text-muted">
+            Computer vision allows AI systems to identify and analyze visual information.
+          </figcaption>
+        </figure>
+
+        <h2>How Computer Vision Works</h2>
 
         <p class="text-piece-learn">
-          A typical neural network consists of three types of layers: an input
-          layer, one or more hidden layers, and an output layer. The input layer
-          receives data, such as numerical measurements or image pixels. Hidden
-          layers transform that information using weighted connections,
-          mathematical operations, and activation functions. The output layer
-          produces the network's final prediction, such as a category label or
-          a numerical value.
+          A computer vision system begins with an image or video, which is
+          represented as numerical pixel values. During training, a model
+          processes many examples and adjusts its parameters to recognize
+          useful patterns. Once trained, it can use those patterns to make
+          predictions about new images.
         </p>
 
         <p class="text-piece-learn">
-          Each connection has a weight that determines how strongly one neuron
-          influences another. Neurons also commonly use a bias and an activation
-          function to help the network learn complex relationships. During
-          training, backpropagation calculates how the prediction error relates
-          to the network's parameters, and an optimization algorithm updates
-          those parameters to reduce the error. Networks with many hidden layers
-          are often described as deep neural networks.
+          For example, an image classifier might learn that certain shapes,
+          textures, and colors are common in pictures of cats. When given a
+          new image, it uses the features it learned to estimate which category
+          the image belongs to. Other systems can locate objects, outline their
+          boundaries, or track them across video frames.
         </p>
+
+        <h2>Convolutional Neural Networks (CNNs)</h2>
+
+        <p class="text-piece-learn">
+        Convolutional neural networks (CNNs) are a type of neural network designed
+        to process images. Their main feature is the use of small matrices called
+        <em>kernels</em>, or <em>filters</em>, that slide across an image to detect
+        specific patterns. Each kernel contains numerical values that are multiplied
+        by pixel values in a small region of the image. The results are added
+        together to produce a value indicating how strongly that region matches
+        the pattern the kernel detects. Different kernels can learn to identify
+        features such as edges, lines, textures, and colors.
+        </p>
+
+        <p class="text-piece-learn">
+        As a kernel moves across an image, it produces a new grid of values called
+        a <em>feature map</em>. Areas that match the kernel's learned pattern produce
+        stronger responses. CNNs use many different kernels to detect different
+        features. The process of applying these filters is called <em>convolution</em>.
+        </p>
+
+        <p class="text-piece-learn">
+        CNNs typically contain multiple convolutional layers. Early layers detect
+        simple features, such as edges and corners, while deeper layers combine
+        those features into more complex patterns, such as eyes, faces, or entire
+        objects. Many CNNs also use activation functions, such as ReLU, which help
+        the network learn more complicated patterns.
+        </p>
+
+        <p class="text-piece-learn">
+        Another common component is <em>pooling</em>, which reduces the spatial
+        size of feature maps. For example, max pooling keeps the largest value
+        within a small region. This reduces the amount of information the network
+        must process while preserving strong feature responses.
+        </p>
+
+        <p class="text-piece-learn">
+        The final layers use the extracted features to make a prediction, such as
+        identifying whether an image contains a cat or a dog. During training, the
+        CNN compares its predictions with the correct labels and uses
+        <em>backpropagation</em> and an optimization algorithm to adjust the kernel
+        values and other parameters. Over many examples, the kernels learn which
+        visual patterns are most useful for the task. CNNs are widely used for
+        image classification, object detection, facial recognition, and medical
+        image analysis.
+        </p>
+
+        <figure class="text-center my-4">
+          <img
+            src="../img/cnn-architecture.png"
+            alt="Diagram of a CNN showing input image, convolutional layers, feature extraction, and output"
+            class="img-fluid"
+            style="max-height: 450px; width: auto;"
+          />
+          <figcaption class="text-muted">
+            CNNs learn visual features through layers of filters before producing an output.
+          </figcaption>
+        </figure>
+
+        <h2>Applications of Computer Vision</h2>
+
+        <p class="text-piece-learn">
+          Computer vision is used in many everyday technologies. Self-driving
+          vehicles use cameras and vision models to detect pedestrians, road
+          signs, and other vehicles. Hospitals can use image analysis tools to
+          help identify patterns in X-rays and other medical scans. Security
+          systems can detect activity, while manufacturers use vision systems
+          to find defects in products.
+        </p>
+
+        <p class="text-piece-learn">
+          Computer vision is also used to organize photos, recognize hand
+          gestures, support augmented reality, and analyze images from satellites.
+          Some systems combine vision with other AI techniques, allowing them
+          to describe an image in words or answer questions about what it shows.
+        </p>
+
+        <figure class="text-center my-4">
+          <img
+            src="../img/computer-vision-applications.png"
+            alt="Computer vision applications in transportation, healthcare, and manufacturing"
+            class="img-fluid"
+            style="max-height: 400px; width: auto;"
+          />
+          <figcaption class="text-muted">
+            Computer vision supports applications in transportation, healthcare, and industry.
+          </figcaption>
+        </figure>
 
         <h2>Strengths and Limitations</h2>
 
         <p class="text-piece-learn">
-          Neural networks can learn complicated patterns from large amounts of
-          data and perform well on tasks that are difficult to solve with
-          manually written rules. They are especially useful for recognizing
-          objects in images, understanding speech, processing text, and
-          identifying relationships in complex datasets. With sufficient
-          training data and an appropriate architecture, they can generalize
-          their learned patterns to examples they have not encountered before.
+          Computer vision can analyze large numbers of images quickly and
+          recognize patterns that would be difficult to identify using simple
+          rules. It can automate repetitive tasks and help people make sense
+          of visual information. CNNs are especially effective at learning
+          useful features directly from image data.
         </p>
 
         <p class="text-piece-learn">
-          However, neural networks also have limitations. Training large models
-          can require substantial computing power, time, and data. Networks may
-          overfit when they memorize details of their training data instead of
-          learning patterns that generalize well to new examples. They can also
-          produce incorrect predictions, inherit biases from their training
-          data, and be difficult to interpret. Techniques such as validation,
-          regularization, and testing on unseen data help evaluate and improve
-          their reliability.
+          However, these systems can make mistakes when images are blurry,
+          poorly lit, or different from their training examples. Their results
+          also depend on the quality and variety of the training data, and
+          biased data can lead to unfair or inaccurate predictions. Training
+          advanced models can require significant computing resources, so
+          their results should be tested carefully before they are used
+          in important situations.
         </p>
 
-        <img src="../img/Problem-of-overfitting.png" alt="Illustration of overfitting in machine learning"
-          class="img-fluid" style="max-height: 450px; width: auto; margin: 20px auto; display: block;" />
-
-        <p class="text-piece-learn">
-          Overfitting occurs when a model learns the training examples too
-          closely, including noise or accidental details. As a result, it may
-          perform well on training data but poorly on unfamiliar examples.
-          To reduce overfitting, developers can use techniques such as
-          regularization, dropout, early stopping, and additional representative
-          training data. Evaluating a model on separate validation and test
-          datasets helps determine whether it can generalize beyond the examples
-          used to train it.
-        </p>
+        <figure class="text-center my-4">
+          <img
+            src="../img/computer-vision-limitations.png"
+            alt="Examples of how poor lighting, blur, and obstructed objects can affect computer vision"
+            class="img-fluid"
+            style="max-height: 400px; width: auto;"
+          />
+          <figcaption class="text-muted">
+            Poor image quality and unfamiliar situations can make visual recognition less reliable.
+          </figcaption>
+        </figure>
       </div>
     </div>
   </div>
