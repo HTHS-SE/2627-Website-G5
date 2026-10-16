@@ -332,6 +332,14 @@ div.card {
 div.card:hover {
     transform: rotate(5deg);
 }
+
+.card-title {
+    font-family: var(--title-family);
+}
+.card-text {
+    font-family: var(--general-family);
+}
+
 section.learn .row {
     padding-top: 200px;
 }
