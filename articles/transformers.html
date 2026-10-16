@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artificial Intelligence</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+
+  <link rel="icon" href="../img/logo.png" />
+</head>
+
+
+<body class="article-body">
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid p-3">
+        <a class="navbar-brand text navtitle" href="..">
+          <img src="../img/logo.png" alt="logo" height="75" />
+          &nbsp;&nbsp;Artificial Intelligence
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text" href="../learn.html">Learn</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text" href="../explore.html">Explore</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text" href="../demo.html">Demo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text" href="../about-us.html">About Us</a>
+            </li>
+          </ul>
+          <div class="navbar-nav ms-auto">
+            <button class="btn btn-secondary nav-btn-format" type="button">
+              Log In
+            </button>
+            <button class="btn btn-primary nav-btn-format" type="button">
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container-xl" style="padding-top: 100px;">
+    <div class="row">
+      <div class="col">
+        <h1 class="subtitle text-center">Transformers</h1>
+
+        <p class="text-piece-learn">
+          Transformers are a type of deep learning model introduced in the 2017
+          paper "Attention Is All You Need." They use a mechanism called attention
+          to identify relationships between different parts of an input. Unlike
+          older models that process sequences step by step, Transformers can
+          process many parts of the input in parallel during training.
+        </p>
+
+        <p class="text-piece-learn">
+          Transformers are used in many modern AI systems, including chatbots,
+          translation tools, coding assistants, and image recognition systems.
+          They are especially important in language AI, where they help computers
+          understand and generate human language.
+        </p>
+
+        <figure class="text-center my-4">
+          <img src="../img/transformer-architecture.png"
+            alt="Diagram of a Transformer architecture"
+            class="img-fluid"
+            style="max-height: 450px; width: auto;" />
+          <figcaption class="text-muted">
+            Transformers use attention and neural network layers to process information.
+          </figcaption>
+        </figure>
+
+        <h2>How Transformers Work</h2>
+
+        <p class="text-piece-learn">
+          Transformers first break input text into smaller pieces called tokens
+          and convert them into numerical representations. They also use
+          positional information to keep track of token order.
+        </p>
+
+        <p class="text-piece-learn">
+          Their main feature is self-attention, which helps the model determine
+          which parts of the input are most relevant to one another. For example,
+          attention can help connect a pronoun to the person or object it refers
+          to. Multiple layers allow the model to learn more complex patterns.
+        </p>
+
+        <figure class="text-center my-4">
+          <img src="../img/self-attention.png"
+            alt="Visualization of self-attention between words"
+            class="img-fluid"
+            style="max-height: 400px; width: auto;" />
+          <figcaption class="text-muted">
+            Self-attention helps Transformers identify relationships between tokens.
+          </figcaption>
+        </figure>
+
+        <h2>Types of Transformer Architectures</h2>
+
+        <p class="text-piece-learn">
+          Transformers come in different designs depending on what they need to do.
+          Three common types are encoder-only, decoder-only, and encoder-decoder models.
+        </p>
+
+        <h3>Encoder-Only Models</h3>
+
+        <p class="text-piece-learn">
+          These models analyze input using context from both before and after each
+          token. They are useful for understanding text, classifying information,
+          and identifying important words. BERT is a well-known example.
+        </p>
+
+        <h3>Decoder-Only Models</h3>
+
+        <p class="text-piece-learn">
+          These models generate text by predicting one token at a time, using
+          the tokens that came before it. Many modern chatbots and large language
+          models use this design.
+        </p>
+
+        <h3>Encoder-Decoder Models</h3>
+
+        <p class="text-piece-learn">
+          These models use an encoder to process input and a decoder to produce
+          output. They are useful for tasks such as translating languages and
+          summarizing documents. The original Transformer used this design.
+        </p>
+
+        <figure class="text-center my-4">
+          <img src="../img/transformer-types.png"
+            alt="Comparison of three Transformer architectures"
+            class="img-fluid"
+            style="max-height: 450px; width: auto;" />
+          <figcaption class="text-muted">
+            Different Transformer designs are suited to different tasks.
+          </figcaption>
+        </figure>
+
+        <h2>Applications of Transformers</h2>
+
+        <p class="text-piece-learn">
+          Transformers are widely used in natural language processing (NLP), a
+          field focused on helping computers work with human language. They can
+          translate text, summarize articles, analyze sentiment, answer questions,
+          and power search tools. By using context, they can better interpret
+          words that have different meanings in different situations.
+        </p>
+
+        <p class="text-piece-learn">
+          Many chatbots and writing assistants use large language models (LLMs),
+          which are trained on large amounts of data to generate responses.
+          Transformer-based LLMs can help explain concepts, write and debug code,
+          and summarize information. However, their answers can still be incorrect
+          and should be checked when accuracy matters.
+        </p>
+
+        <p class="text-piece-learn">
+          Transformers are also used beyond text. Vision Transformers analyze
+          images, while multimodal models can work with combinations of text,
+          images, and audio. These systems are used in image understanding,
+          speech applications, education, software development, and business.
+        </p>
+
+        <figure class="text-center my-4">
+          <img src="../img/transformer-applications.png"
+            alt="Examples of Transformer applications"
+            class="img-fluid"
+            style="max-height: 450px; width: auto;" />
+          <figcaption class="text-muted">
+            Transformers support language, image, audio, and coding applications.
+          </figcaption>
+        </figure>
+
+        <h2>Strengths and Limitations</h2>
+
+        <p class="text-piece-learn">
+          Transformers can learn complicated patterns, use context effectively,
+          and handle many different types of tasks. Their ability to process
+          data in parallel during training has also helped researchers build
+          powerful models using large datasets.
+        </p>
+
+        <p class="text-piece-learn">
+          However, large Transformers can require significant computing power
+          and memory. They may also reflect biases in their training data or
+          produce convincing but incorrect answers. Researchers work to improve
+          their efficiency and reliability, but human review is still important
+          when mistakes could have serious consequences.
+        </p>
+
+        <figure class="text-center my-4">
+          <img src="../img/transformer-strengths-limitations.png"
+            alt="Comparison of Transformer strengths and limitations"
+            class="img-fluid"
+            style="max-height: 450px; width: auto;" />
+          <figcaption class="text-muted">
+            Transformers are powerful, but their accuracy and efficiency have limits.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+  <footer class="p-5 footer text-light text-center position-relative">
+    <div class="container">
+      <p class="lead footing">Copyright &copy; SE2627 Group 5</p>
+      <a href="#" class="position-absolute bottom-0 end-0 p-5">
+        <i class="bi bi-arrow-up-circle h2 icon-white"></i>
+      </a>
+    </div>
+  </footer>
+</body>
+
+
+</html>
