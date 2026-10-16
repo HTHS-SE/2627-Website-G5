@@ -24,6 +24,14 @@ nav {
     background-size: 200%;
 }
 
+.navtitle {
+    font-family: var(--title-family);
+}
+
+.nav-item {
+    font-family: var(--general-family);
+}
+
 html {
     background-color: #FFFFFF;
 }
