@@ -293,6 +293,15 @@ section.learn p.subtitle-text {
     font-family: var(--title-family);
 }
 
+.article-body .container-xl h3 {
+    max-width: 1000px;
+    margin: 1.5rem auto 0.75rem auto;
+    padding: 0 1rem;
+    font-family: var(--title-family);
+    font-size: 1.5rem;
+    text-align: left;
+}
+
 .article-body .container-xl img.img-fluid {
     display: block;
     max-width: 100%;
