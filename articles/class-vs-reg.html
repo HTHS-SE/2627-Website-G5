@@ -81,12 +81,9 @@
         </p>
 
         <figure class="text-center my-4">
-          <img
-            src="../img/classification-regression.png"
-            alt="Comparison of classification categories and regression numerical predictions"
-            class="img-fluid"
-            style="max-height: 400px; width: auto;"
-          />
+          <img src="../img/classification-regression.png"
+            alt="Comparison of classification categories and regression numerical predictions" class="img-fluid"
+            style="max-height: 400px; width: auto;" />
           <figcaption class="text-muted">
             Classification predicts categories, while regression predicts numerical values.
           </figcaption>
@@ -125,9 +122,9 @@
           Many classification models separate categories using a
           <em>decision boundary</em>. In a simple example with two features,
           this boundary might be a line dividing two groups of data points.
-          More complex models can create curved or irregular boundaries.
-          Support vector machines (SVMs), for example, find a boundary that
-          separates classes while aiming to maximize the margin between them.
+          More complex models can create curved or irregular boundaries, still in 2D space.
+          Even more complex models, such as support vector machines (SVMs), find a boundary that
+          separates classes while aiming to maximize the margin between them in higher-dimensional space.
           Decision trees and neural networks are other common classification
           methods.
         </p>
@@ -137,16 +134,14 @@
           A model might estimate an 85% probability that an email is spam,
           then use a chosen threshold to make its final decision. The threshold
           can be adjusted depending on the cost of false positives and
-          false negatives.
+          false negatives. Depending on the use case, false positive may be more costly than false negatives, or vice
+          versa.
         </p>
 
         <figure class="text-center my-4">
-          <img
-            src="../img/classification-boundaries.png"
-            alt="Diagram showing a decision boundary separating two classes of data points"
-            class="img-fluid"
-            style="max-height: 400px; width: auto;"
-          />
+          <img src="../img/classification-boundaries.png"
+            alt="Diagram showing a decision boundary separating two classes of data points" class="img-fluid"
+            style="max-height: 400px; width: auto;" />
           <figcaption class="text-muted">
             A decision boundary separates data points predicted to belong to different classes.
           </figcaption>
@@ -172,7 +167,7 @@
 
         <p class="text-piece-learn">
           Not every relationship follows a straight line. <em>Polynomial
-          regression</em> adds powers of the input variable, such as x², to
+            regression</em> adds powers of the input variable, such as x², to
           model curved relationships. Other approaches include decision-tree
           regression and neural network regression, which can learn more
           complex patterns.
@@ -187,12 +182,9 @@
         </p>
 
         <figure class="text-center my-4">
-          <img
-            src="../img/regression-models.png"
+          <img src="../img/regression-models.png"
             alt="Comparison of linear regression with a straight line and polynomial regression with a curve"
-            class="img-fluid"
-            style="max-height: 400px; width: auto;"
-          />
+            class="img-fluid" style="max-height: 400px; width: auto;" />
           <figcaption class="text-muted">
             Linear regression fits a straight line, while polynomial regression can model curved patterns.
           </figcaption>
@@ -217,12 +209,8 @@
         </p>
 
         <figure class="text-center my-4">
-          <img
-            src="../img/model-evaluation.png"
-            alt="Illustration of comparing model predictions with actual data"
-            class="img-fluid"
-            style="max-height: 400px; width: auto;"
-          />
+          <img src="../img/model-evaluation.png" alt="Illustration of comparing model predictions with actual data"
+            class="img-fluid" style="max-height: 400px; width: auto;" />
           <figcaption class="text-muted">
             Evaluating predictions against actual results helps measure a model's performance.
           </figcaption>
