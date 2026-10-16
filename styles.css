@@ -262,6 +262,7 @@ section.learn p.subtitle-text {
     width: 97%;
     margin: auto;
     border: 3px solid #EAEAEA;
+    max-width: 1000px;
     border-radius: 6px;
     position: relative;
     padding: 1rem;
