@@ -254,6 +254,10 @@ section.learn p.subtitle-text {
     padding-top: 4vh;
 }
 
+.h2-text {
+    margin-left: 10px;
+}
+
 .article-body .code-piece-learn{
     width: 97%;
     margin: auto;
