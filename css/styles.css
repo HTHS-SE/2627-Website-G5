@@ -29,6 +29,13 @@ nav {
 
 .navtitle {
     font-family: var(--title-family);
+    font-size: 30px !important;
+}
+
+@media (max-width: 576px) {
+    .navtitle {
+        font-size: 20px !important;
+    }
 }
 
 .nav-item {
@@ -487,4 +494,17 @@ figure.text-center img {
 
 figure.br-none img {
     border-radius: 0 !important;
+}
+
+#learn-button {
+    background-color: #FFAB40;
+    border-radius: 50px;
+    color: white;
+    font-size: 50px !important;
+}
+
+@media (max-width: 1200px) {
+    #learn-button {
+        font-size: 30px !important;
+    }
 }
