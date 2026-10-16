@@ -15,6 +15,8 @@
         crossorigin="anonymous"></script>
 
     <link rel="icon" href="img/logo.png">
+
+    <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -52,7 +54,77 @@
         </nav>
     </header>
     <div class="container-xl" style="padding-top: 60px;">
-        
+        <br>
+        <h1 class="main">Demo</h1>
+        <section class="demo-section container-xl py-5">
+            <div class="demo-card">
+                <h2 class="demo-title">Deep Neural Network with CIFAR Dataset</h2>
+                <div class="upload-box">
+                    <label for="cifar-upload" class="upload-label">Upload Image</label>
+                    <input type="file" id="cifar-upload" class="upload-input">
+                </div>
+
+                <div class="nn-container">
+
+                    <div class="nn-visual">
+                        <div class="layer layer-1">
+                            <div class="node"></div>
+                        </div>
+                        <div class="layer layer-2">
+                            <div class="node"></div>
+                            <div class="node"></div>
+                            <div class="node"></div>
+                        </div>
+                        <div class="layer layer-3">
+                            <div class="node"></div>
+                            <div class="node"></div>
+                            <div class="node"></div>
+                        </div>
+                        <div class="layer layer-4">
+                            <div class="node"></div>
+                        </div>
+                    </div>
+
+                    <div class="nn-loading"></div>
+                </div>
+                <p class="result-text">Classified as: <span class="nn-result">—</span></p>
+                <button class="run-btn">Run Model</button>
+            </div>
+
+            <div class="demo-card">
+                <h2 class="demo-title">Deep Neural Network with MNIST Dataset</h2>
+                <div class="upload-box">
+                    <label for="mnist-upload" class="upload-label">Upload Image</label>
+                    <input type="file" id="mnist-upload" class="upload-input">
+                </div>
+
+                <div class="nn-container">
+
+                    <div class="nn-visual">
+                        <div class="layer layer-1">
+                            <div class="node"></div>
+                        </div>
+                        <div class="layer layer-2">
+                            <div class="node"></div>
+                            <div class="node"></div>
+                            <div class="node"></div>
+                        </div>
+                        <div class="layer layer-3">
+                            <div class="node"></div>
+                            <div class="node"></div>
+                            <div class="node"></div>
+                        </div>
+                        <div class="layer layer-4">
+                            <div class="node"></div>
+                        </div>
+                    </div>
+
+                    <div class="nn-loading"></div>
+                </div>
+                <p class="result-text">Classified as: <span class="nn-result">—</span></p>
+                <button class="run-btn">Run Model</button>
+            </div>
+        </section>
     </div>
     <footer class="p-5 footer text-light text-center position-relative">
       <div class="container">
