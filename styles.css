@@ -274,11 +274,6 @@ section.learn p.subtitle-text {
     line-height: 1.8;
 }
 
-.container-xl {
-    padding-top: 150px;
-    padding-bottom: 40px;
-}
-
 .article-body .container-xl h1.subtitle {
     font-family: var(--title-family);
     font-size: clamp(2.5rem, 5vw, 4rem);
