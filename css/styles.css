@@ -105,6 +105,15 @@ h1.subtitle {
     font-size: 70px;
 }
 
+@media (max-width: 576px) {
+    h1.subtitle {
+        font-size: 40px !important;
+    }
+    p.subtext {
+        font-size: 25px !important;
+    }
+}
+
 p.subtext {
     font-family: var(--general-family);
     font-size: 30px;
