@@ -470,7 +470,6 @@ section.learn a.button {
     gap: 0.7rem;
 }
 
-
 .node {
     width: 22px;
     height: 22px;
@@ -479,3 +478,10 @@ section.learn a.button {
     opacity: 0.4;
 }
 
+figure.text-center img {
+    border-radius: 15px;
+}
+
+figure.br-none img {
+    border-radius: 0 !important;
+}
